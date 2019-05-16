@@ -1,0 +1,263 @@
+/*============body===================*/
+body {
+    /*background: #EEE;*/
+    background-image: url("../img/admin_bg_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Open Sans, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #555;
+    line-height: 25px;
+    letter-spacing: 0.8px;
+}
+
+a {
+    color: #777;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #398110;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+/*===============Form Style==============*/
+.form-control {
+    box-shadow: none;
+}
+
+.form-group input, .form-group textarea {
+    background-color: transparent;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 9px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #58b325;
+}
+
+.input-group-addon {
+    background-color: transparent;
+}
+
+.input-lg {
+    border-radius: 4px;
+}
+
+.modal-header {
+    text-transform: uppercase;
+}
+
+/*===========Navbar Top==============*/
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+.navbar-brand {
+    height: 70px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #58b325;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.navbar-top {
+    background: #FFF;
+    padding-top: 10px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    background-color: #58b325;
+    color: #FFF;
+}
+
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.navbar-right {
+    margin-top: 15px;
+}
+
+.navbar-nav > li.new-ads a {
+    min-width: 180px;
+    color: #FFF !important;
+}
+
+.navbar-nav > li.new-ads a:hover, .navbar-nav > li.new-ads a:focus {
+    background-color: #398110;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #58b325;
+}
+
+.btn-ads {
+    background-color: #58b325;
+}
+
+.dropdown-login {
+    border: 1px solid #DDD;
+    box-shadow: none;
+    border-top-left-radius: 5px !important;
+}
+
+.btn {
+    text-transform: uppercase;
+}
+
+.btn-custom {
+    background-color: #58b325;
+    color: #FFF;
+}
+
+.btn-custom:hover {
+    background-color: #398110;
+    color: #FFF;
+}
+
+#logo {
+    margin-top: 15px;
+}
+
+.menu-div {
+    background: #ffffff;
+    opacity: .8;
+    min-height: 550px
+}
+
+.menu-div h1 {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ff0057;
+}
+
+.pass-change-div {
+    padding: 20px;
+    opacity: .8;
+    background: #ffffff;
+    min-height: 550px;
+    margin-left: 20px;
+}
+
+
+.menu-ul {
+    list-style: none !important;
+}
+
+.menu-ul li {
+margin-bottom: 15px;
+}
+.active{
+    color: #009688 !important
+}
+
+
+
+
+
+
+/*==============Counter================*/
+.counter{
+    margin-top: 50px;
+    padding: 20px 0;
+    background: #58b325;
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item-count{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item-icon{
+    margin-bottom: 20px;
+    font-size: 40px;
+    display: block;
+}
+
+.item-info{
+    display: block;
+    margin-bottom: 20px;
+}
+/*============Footer=================*/
+.footer {
+
+   
+    padding: 30px 0;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+.footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu li a {
+    border-left: 1px solid #ddd;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+
+.footer-menu li a:first-child {
+    border-left: 0;
+    color: #FFFFFF;
+}
+
+@media (max-width:767px) {
+    .footer ul {
+        float: none;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer ul:last-child {
+        margin-top: 20px;
+    }
+
+    .hero-title{
+        font-size: 20px;
+    }
+
+    .category-wrapper{
+        padding: 0;
+    }
+}
