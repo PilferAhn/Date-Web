@@ -9,30 +9,20 @@ if(!isset($_SESSION))
 {
     session_start();
 }
-
-
-    
-
-
-
 ?>
 
 <?php
 
-    $email = $_SESSION['email'];
-    $query = "SELECT city, interest1, interest2, occupation, general_info FROM users where email = '$email'";
+  # push para to API php and return all information about user 
+  $email = $_SESSION['email'];
+  $getInfo = getUserInfo($email);   
+  
+  $city = $getInfo['city'];
+  $interest1 = $getInfo['interest1'];
+  $interest2 = $getInfo['interest2'];
+  $occupation = $getInfo['occupation'];
+  $info = $getInfo['general_info'];
     
-    $results = mysqli_query($db, $query);
-    $array = mysqli_fetch_assoc($results);
-    
-    $city = $array['city'];
-    $interest1 = $array['interest1'];
-    $interest2 = $array['interest2'];
-    $occupation = $array['occupation'];
-    $info = $array['general_info'];
-
-    
-    $getInfo = getUserInfo($email)
 
     
 

@@ -1,23 +1,19 @@
-<?
+<?php
 	
 	function getUserInfo($email)
 	{
 		$db = mysqli_connect('localhost', 'root', '', 'cap');
 
+		$query = "SELECT * FROM users WHERE email = '$email'";
 		
-		echo $email.'</br>';
-
-		$query = "SELECT 'username' FROM users where email = $email";
-
-		echo "ok.</br>";
 		$result = mysqli_query($db, $query);
 
-		$array = mysqli_fetch_assoc($result);
-		
+		$array = mysqli_fetch_assoc($result);		
+
 		return $array;
 	}
 
 
-?>
+?> 
 
 

@@ -1,6 +1,11 @@
 <?php include('server/server.php') ?>
-<?php session_start(); ?>
+<?php
 
+  if(!isset($_SESSION))
+  {
+    session_start();
+  }
+ ?>
 <?php
 
     $email = $_SESSION['email'];
